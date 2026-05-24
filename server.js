@@ -71,3 +71,6 @@ app.listen(3000, () => {
 app.get('/ping', (req, res) => {
     res.status(200).send("OK");
 });
+app.get('/', (req, res) => {
+    res.status(200).send("Server is live and running!");
+});
